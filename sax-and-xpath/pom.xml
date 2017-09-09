@@ -2,19 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
+    <parent>
+        <artifactId>xml-parser-example</artifactId>
+        <groupId>com.ote.test</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ote.test</groupId>
-    <artifactId>xml-parser-example</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>sax-and-xpath</artifactId>
 
-    <modules>
-        <module>dom-and-xpath</module>
-        <module>sax-and-xpath</module>
-    </modules>
-
-    
 
 </project>
