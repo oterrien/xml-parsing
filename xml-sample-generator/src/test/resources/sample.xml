@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<tribes>
+    <tribe>
+        <id>1</id>
+        <perimeter>MOCK</perimeter>
+        <featureTeam>
+            <id>1</id>
+            <name>MOCK</name>
+            <application>MOCK</application>
+            <person>
+                <role>FEATURE_TEAM_LEADER</role>
+                <firstName>MOCK</firstName>
+                <lastName>MOCK</lastName>
+            </person>
+        </featureTeam>
+    </tribe>
+</tribes>
