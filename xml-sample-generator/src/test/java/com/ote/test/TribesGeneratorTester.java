@@ -36,6 +36,6 @@ public class TribesGeneratorTester {
     @Test
     public void generateSampleFile() throws Exception {
 
-        SampleGenerator.getInstance().generate(new File("../sample/sample1000.xml"), 10, 10, 10);
+        SampleGenerator.getInstance().generate(new File("../sample/sample1K.xml"), 10, 10, 10);
     }
 }

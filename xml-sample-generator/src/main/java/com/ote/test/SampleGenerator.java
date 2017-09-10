@@ -17,7 +17,7 @@ public final class SampleGenerator {
     @Getter
     private final static SampleGenerator Instance = new SampleGenerator();
 
-    private JAXBContext jaxbContext;
+    private final JAXBContext jaxbContext;
 
     private SampleGenerator() {
         try {

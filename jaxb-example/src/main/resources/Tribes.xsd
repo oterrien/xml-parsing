@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="tribes" type="Tribes" />
+
+    <xs:complexType name="Tribes">
+        <xs:sequence>
+            <xs:element name="tribe" type="Tribe" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Tribe">
+        <xs:sequence>
+            <xs:element name="id" type="xs:long"/>
+            <xs:element name="perimeter" type="xs:string"/>
+            <xs:element name="featureTeam" type="FeatureTeam" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="FeatureTeam">
+        <xs:sequence>
+            <xs:element name="id" type="xs:long"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="application" type="xs:string"/>
+            <xs:element name="person" type="Person" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Person">
+        <xs:sequence>
+            <xs:element name="role" type="Role" maxOccurs="unbounded"/>
+            <xs:element name="firstName" type="xs:string"/>
+            <xs:element name="lastName" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="Role">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="FEATURE_TEAM_LEADER"/>
+            <xs:enumeration value="PRODUCT_OWNER"/>
+            <xs:enumeration value="PROXY_PRODUCT_OWNER"/>
+            <xs:enumeration value="QUALITY_ANALYST"/>
+            <xs:enumeration value="DEV_OPS"/>
+            <xs:enumeration value="TECHNICAL_LEADER"/>
+            <xs:enumeration value="BACKEND_DEVELOPER"/>
+            <xs:enumeration value="FRONTEND_DEVELOPER"/>
+            <xs:enumeration value="USER_EXPERIENCE"/>
+            <xs:enumeration value="SUPPORT"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
